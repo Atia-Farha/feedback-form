@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.star-rating {
+  direction: rtl;
+  display: inline-flex;
+  gap: clamp(1px, 5vw, 40px);
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 2rem;
+  color: #d3d3d3;
+  cursor: pointer;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: var(--bs-primary);
+}
+
+.star-rating label:hover {
+  color: var(--bs-primary-border-subtle);
+}
+
+button:hover,
+button:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
