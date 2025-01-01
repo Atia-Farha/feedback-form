@@ -12,7 +12,7 @@
 </head>
 
 <body class="container-sm my-5">
-  <form data-netlify="true" action="POST" class="shadow p-4 d-flex flex-column gap-4 rounded-4 bg-light was-validated">
+  <form data-netlify="true" method="POST" class="shadow p-4 d-flex flex-column gap-4 rounded-4 bg-light was-validated">
   
     <input type="hidden" name="form-name" value="feedback-form">
   
@@ -73,11 +73,9 @@
       <textarea id="suggestion" class="form-control" name="suggestions" placeholder="Share your suggestions" title="Share your suggestions" style="height: 100px; resize: none;"></textarea>
       <label for="suggestion">Suggestions <span class="text-muted">(optional)</span></label>
     </div>
-
-		<div data-netlify-recaptcha="true"></div>
     
     <div class="text-center">
-      <button type="submit" name="submit" value="submit" class="text-bg-primary w-25 border-0 p-2 rounded-3">Submit</button>
+      <button type="submit" name="submit" class="text-bg-primary w-25 border-0 p-2 rounded-3">Submit</button>
     </div>
   </form>
 </body>
